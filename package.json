@@ -8,7 +8,11 @@
 		"start": "next start src"
 	},
 	"dependencies": {
+		"@koyofinance/core-sdk": "^0.2.0-next.c9927dd.0",
+		"@koyofinance/swap-sdk": "^0.2.0-next.c9927dd.0",
+		"@sapphire/fetch": "^2.3.1",
 		"ethers": "^5.6.5",
+		"memoizee": "^0.4.15",
 		"next": "12.1.0",
 		"react": "^17.0.2",
 		"react-dom": "17.0.2",
@@ -18,6 +22,7 @@
 		"@sapphire/eslint-config": "4.0.8",
 		"@sapphire/prettier-config": "1.2.7",
 		"@sapphire/ts-config": "3.1.6",
+		"@types/memoizee": "^0.4.8",
 		"@types/node": "^17.0.21",
 		"@types/react": "17.0.39",
 		"@types/react-dom": "17.0.11",

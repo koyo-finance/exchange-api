@@ -1,23 +1,33 @@
 {
-	"extends": "@sapphire/ts-config",
-	"compileOnSave": false,
-	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"module": "ESNext",
-		"lib": ["ESNext", "DOM"],
-		"declaration": false,
-		"declarationMap": false,
-		"isolatedModules": true,
-		"resolveJsonModule": true,
-		"jsx": "preserve",
-		"noEmit": true,
-		"tsBuildInfoFile": "./.tsbuildinfo",
-		"baseUrl": ".",
-		"rootDir": ".",
-		"skipLibCheck": true,
-		"importsNotUsedAsValues": "remove",
-	},
-	"include": ["."],
-	"exclude": ["public/sw.js", "public/workbox*.js", ".next", "out"]
+  "extends": "@sapphire/ts-config",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "declaration": false,
+    "declarationMap": false,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "remove"
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "public/sw.js",
+    "public/workbox*.js",
+    ".next",
+    "out"
+  ]
 }

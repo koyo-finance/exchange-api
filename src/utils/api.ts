@@ -13,7 +13,7 @@ const formatJsonError = (err: any) => ({
 
 const addGeneratedTime = async (res: any) => ({
 	...(await res),
-	generatedTimeMs: Number(Date.now())
+	generatedTime: Math.floor(Date.now() / 1000)
 });
 
 const fn = (cb: (query: any) => any, options: { maxAge?: number } = {}) => {

@@ -740,12 +740,21 @@
     tslib "^2.4.0"
     wagmi "^0.3.5"
 
-"@koyofinance/swap-sdk@^0.2.0-next.c9927dd.0":
-  version "0.2.0-next.c9927dd.0"
-  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.c9927dd.0.tgz#9f6c86a8423514afcdbcebb1890b6e4ec71c4664"
-  integrity sha512-aGi0RDU3p6pdhV0+bOeDmG9i4znZhrd2p9XUWUtpTtLgvR6BJ3qTM3ZqKvniJ/oCb5yKNjVSk51GfCOuuCixbg==
+"@koyofinance/core-sdk@^0.2.0-next.e7c5222.0":
+  version "0.2.0-next.e7c5222.0"
+  resolved "https://registry.yarnpkg.com/@koyofinance/core-sdk/-/core-sdk-0.2.0-next.e7c5222.0.tgz#ed2ffec5618bde924a11c4bd3a8d65b57ff8b9f6"
+  integrity sha512-JpFNfbODbRsTOr3VdbrHTPAmwzD0K41j7Bsd1zvnkjzRzarUQedYRGPQLYT76SToxVp9reB/jOyEHH75Sbklrg==
   dependencies:
-    "@koyofinance/core-sdk" "^0.2.0-next.c9927dd.0"
+    ethers "^5.6.6"
+    tslib "^2.4.0"
+    wagmi "^0.3.5"
+
+"@koyofinance/swap-sdk@^0.2.0-next.e7c5222.0":
+  version "0.2.0-next.e7c5222.0"
+  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.e7c5222.0.tgz#c65683d4aec2eb5c79894da47b7770ae803746b5"
+  integrity sha512-KndCibjgh99B4IINUuR8E8B6qxgkQ5vqnG6XSMkFDBgyeWUtMIQ+S1oYO7VItnpWOsfmRHebIgT7K+fAaK5bsw==
+  dependencies:
+    "@koyofinance/core-sdk" "^0.2.0-next.e7c5222.0"
     tslib "^2.4.0"
 
 "@metamask/safe-event-emitter@2.0.0", "@metamask/safe-event-emitter@^2.0.0":

@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"@koyofinance/core-sdk": "^0.2.0-next.c9927dd.0",
-		"@koyofinance/swap-sdk": "^0.2.0-next.c9927dd.0",
+		"@koyofinance/swap-sdk": "^0.2.0-next.e7c5222.0",
 		"@sapphire/fetch": "^2.3.1",
 		"ethers": "^5.6.5",
 		"memoizee": "^0.4.15",

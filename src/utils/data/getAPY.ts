@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-
 import memoize from 'memoizee';
 import getPoolUsdFigure from 'utils/data/getPoolUsdFigure';
 import { fetch, FetchResultTypes } from '@sapphire/fetch';

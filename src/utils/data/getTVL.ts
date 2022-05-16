@@ -54,7 +54,13 @@ const getTVL = memoize(
 
 					return [
 						pool.id,
-						{ address: pool.addresses.swap, coins: pool.coins.length, decimals: pool.coins.map((coin) => coin.decimals), tvl }
+						{
+							id: pool.id,
+							address: pool.addresses.swap,
+							coins: pool.coins.length,
+							decimals: pool.coins.map((coin) => coin.decimals),
+							tvl
+						}
 					];
 				})
 			)

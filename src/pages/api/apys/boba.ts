@@ -1,10 +1,11 @@
+import { ChainId } from '@koyofinance/core-sdk';
 import { augmentedPools } from '@koyofinance/swap-sdk';
-import getAPY from 'utils/data/getAPY';
 import { fn } from 'utils/api';
+import getAPY from 'utils/data/getAPY';
 
 export default fn(
 	async () => {
-		const [{ weeklyApy: baseApys }] = await Promise.all([getAPY()]);
+		const [{ weeklyApy: baseApys }] = await Promise.all([getAPY(ChainId.BOBA)]);
 
 		return Object.fromEntries(
 			augmentedPools.map((pool, index) => [

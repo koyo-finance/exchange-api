@@ -1,15 +1,15 @@
+import { ChainId } from '@koyofinance/core-sdk';
+import { augmentedPools, poolIds } from '@koyofinance/swap-sdk';
+import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import memoize from 'memoizee';
 import getPoolUsdFigure from 'utils/data/getPoolUsdFigure';
-import { fetch, FetchResultTypes } from '@sapphire/fetch';
-import { augmentedPools, poolIds } from '@koyofinance/swap-sdk';
+import { CHAIN_APY_FILE } from '../../constants';
 
 const initialVolumesValues = Object.fromEntries(augmentedPools.map(({ id }) => [id, [-1, -1]]));
 
 const getAPY = memoize(
-	async () => {
-		const [stablePoolStats] = await Promise.all([
-			fetch<APYStats>('https://indexer.koyo.finance/exchange/stats/apys.json', 'json' as FetchResultTypes.JSON)
-		]);
+	async (chain: ChainId = ChainId.BOBA) => {
+		const [stablePoolStats] = await Promise.all([fetch<APYStats>(CHAIN_APY_FILE[chain], 'json' as FetchResultTypes.JSON)]);
 		const volumes = initialVolumesValues;
 
 		for (const [key] of Object.entries(volumes)) {
@@ -54,21 +54,12 @@ const getAPY = memoize(
 
 export interface APYStats {
 	apy: {
-		day: {
-			[k: string]: number;
-		};
-		week: {
-			[k: string]: number;
-		};
-		month: {
-			[k: string]: number;
-		};
-		total: {
+		[K in 'day' | 'week' | 'month' | 'total']: {
 			[k: string]: number;
 		};
 	};
 	volume: {
-		[k: string]: number;
+		[K: string]: number;
 	};
 }
 

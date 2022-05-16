@@ -3,6 +3,12 @@ import { augmentedPools } from '@koyofinance/swap-sdk';
 import { fn } from 'utils/api';
 import getAPY from 'utils/data/getAPY';
 
+/**
+ * @swagger
+ * /apys/boba:
+ *   get:
+ *     description: Returns the APY for pools on Boba.
+ */
 export default fn(
 	async () => {
 		const [{ weeklyApy: baseApys }] = await Promise.all([getAPY(ChainId.BOBA)]);

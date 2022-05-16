@@ -1,0 +1,9 @@
+{
+	"apiFolder": "src/pages/api",
+	"definition": {
+		"openapi": "3.0.0",
+		"info": {
+			"title": "Kōyō Finance Exchange API"
+		}
+	}
+}

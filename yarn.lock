@@ -204,6 +204,13 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@elementfi/elf-council-typechain@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@elementfi/elf-council-typechain/-/elf-council-typechain-1.0.2.tgz#9ba918cb32b3ef26b36bd2ad8be332b356f14352"
+  integrity sha512-B/AT0Mr/o+ABbDzEPEk3F2s4OtVs7KKIDrsdHXMjswMP4VpVwhr2eQ6sr6w9agiT7vfNIiE2Xgum9w5Qzxmfdw==
+  dependencies:
+    tsc "^2.0.3"
+
 "@eslint/eslintrc@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.2.3.tgz#fcaa2bcef39e13d6e9e7f6271f4cc7cae1174886"
@@ -731,6 +738,15 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
+"@koyofinance/core-sdk@^0.2.0-next.4f3c101.0":
+  version "0.2.0-next.a24c0e2.0"
+  resolved "https://registry.yarnpkg.com/@koyofinance/core-sdk/-/core-sdk-0.2.0-next.a24c0e2.0.tgz#ac5dc2a6926ddbd32e3a996928e0415100df801e"
+  integrity sha512-R29gd2i6WsC2HJDJbrA905CveNMsu2ap/6SMCtiEkAFoGPejI9VE8myTp62vGkS85HXrWBFj+a0ECBlqEdtqqQ==
+  dependencies:
+    ethers "^5.6.6"
+    tslib "^2.4.0"
+    wagmi "^0.3.5"
+
 "@koyofinance/core-sdk@^0.2.0-next.c9927dd.0":
   version "0.2.0-next.c9927dd.0"
   resolved "https://registry.yarnpkg.com/@koyofinance/core-sdk/-/core-sdk-0.2.0-next.c9927dd.0.tgz#d19c9e52c373127ed190e409741b2caa65142fe1"
@@ -740,21 +756,12 @@
     tslib "^2.4.0"
     wagmi "^0.3.5"
 
-"@koyofinance/core-sdk@^0.2.0-next.e7c5222.0":
-  version "0.2.0-next.e7c5222.0"
-  resolved "https://registry.yarnpkg.com/@koyofinance/core-sdk/-/core-sdk-0.2.0-next.e7c5222.0.tgz#ed2ffec5618bde924a11c4bd3a8d65b57ff8b9f6"
-  integrity sha512-JpFNfbODbRsTOr3VdbrHTPAmwzD0K41j7Bsd1zvnkjzRzarUQedYRGPQLYT76SToxVp9reB/jOyEHH75Sbklrg==
+"@koyofinance/swap-sdk@^0.2.0-next.4f3c101.0":
+  version "0.2.0-next.4f3c101.0"
+  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.4f3c101.0.tgz#087886735aad951fde4b434dae14e1cb25cf3c76"
+  integrity sha512-sqQhKjvwAHmt/yMFbE2TJNr8Qp2QCb0J2y24hTfnONIRLbssrdSlCP2Hain49R85sXalkUGBqFEzznEUWZXRYg==
   dependencies:
-    ethers "^5.6.6"
-    tslib "^2.4.0"
-    wagmi "^0.3.5"
-
-"@koyofinance/swap-sdk@^0.2.0-next.e7c5222.0":
-  version "0.2.0-next.e7c5222.0"
-  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.e7c5222.0.tgz#c65683d4aec2eb5c79894da47b7770ae803746b5"
-  integrity sha512-KndCibjgh99B4IINUuR8E8B6qxgkQ5vqnG6XSMkFDBgyeWUtMIQ+S1oYO7VItnpWOsfmRHebIgT7K+fAaK5bsw==
-  dependencies:
-    "@koyofinance/core-sdk" "^0.2.0-next.e7c5222.0"
+    "@koyofinance/core-sdk" "^0.2.0-next.4f3c101.0"
     tslib "^2.4.0"
 
 "@metamask/safe-event-emitter@2.0.0", "@metamask/safe-event-emitter@^2.0.0":
@@ -902,6 +909,14 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
+
+"@typechain/ethers-v5@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-10.0.0.tgz#1b6e292d2ed9afb0d2f7a4674cc199bb95bad714"
+  integrity sha512-Kot7fwAqnH96ZbI8xrRgj5Kpv9yCEdjo7mxRqrH7bYpEgijT5MmuOo8IVsdhOu7Uog4ONg7k/d5UdbAtTKUgsA==
+  dependencies:
+    lodash "^4.17.15"
+    ts-essentials "^7.0.1"
 
 "@types/bn.js@^4.11.3":
   version "4.11.6"
@@ -4220,6 +4235,11 @@ ts-node@^10.7.0:
     make-error "^1.1.1"
     v8-compile-cache-lib "^3.0.0"
     yn "3.1.1"
+
+tsc@^2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/tsc/-/tsc-2.0.4.tgz#5f6499146abea5dca4420b451fa4f2f9345238f5"
+  integrity sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"

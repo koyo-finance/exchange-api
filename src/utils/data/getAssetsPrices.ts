@@ -8,7 +8,7 @@ const getAssetsPrices = memoize(
 			'json' as FetchResultTypes.JSON
 		);
 
-		return Object.fromEntries(assetCoingeckoIds.map((id) => [id, id === 'dollar' ? 1 : prices[id]?.usd]));
+		return Object.fromEntries(assetCoingeckoIds.map((id) => [id, id === 'dollar' ? 1 : prices[id]?.usd || 0]));
 	},
 	{
 		promise: true,

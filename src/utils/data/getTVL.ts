@@ -1,6 +1,6 @@
 import { ERC20PermitWithMint__factory } from '@elementfi/elf-council-typechain';
 import { ChainId } from '@koyofinance/core-sdk';
-import { augmentedPools } from '@koyofinance/swap-sdk';
+import { AugmentedPool, augmentedPools, getPoolById } from '@koyofinance/swap-sdk';
 import { bobaMainnetReadonlyProvider } from 'constants/providers';
 import { BigNumber } from 'ethers';
 import { formatUnits } from 'ethers/lib/utils';
@@ -46,7 +46,19 @@ const getTVL = memoize(
 			.map(([, poolTvl]) => poolTvl)
 			.reduce((acc, curr) => acc + curr, 0);
 
-		return { tvl };
+		return {
+			tvl,
+			pools: Object.fromEntries(
+				Object.entries(poolUSDBalance).map(([poolId, tvl]) => {
+					const pool = getPoolById(poolId) as AugmentedPool;
+
+					return [
+						pool.id,
+						{ address: pool.addresses.swap, coins: pool.coins.length, decimals: pool.coins.map((coin) => coin.decimals), tvl }
+					];
+				})
+			)
+		};
 	},
 	{
 		promise: true,

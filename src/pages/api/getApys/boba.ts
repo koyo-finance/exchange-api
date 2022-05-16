@@ -1,6 +1,6 @@
 import { augmentedPools } from '@koyofinance/swap-sdk';
 import getAPY from 'utils/data/getAPY';
-import { fn } from '../../utils/api';
+import { fn } from 'utils/api';
 
 export default fn(
 	async () => {

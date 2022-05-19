@@ -780,7 +780,7 @@
     "@json-rpc-tools/types" "^1.7.6"
     "@pedrouid/environment" "^1.0.1"
 
-"@koyofinance/core-sdk@^0.2.0-next.4f3c101.0":
+"@koyofinance/core-sdk@^0.2.0-next.10203f0.0":
   version "0.2.0-next.a24c0e2.0"
   resolved "https://registry.yarnpkg.com/@koyofinance/core-sdk/-/core-sdk-0.2.0-next.a24c0e2.0.tgz#ac5dc2a6926ddbd32e3a996928e0415100df801e"
   integrity sha512-R29gd2i6WsC2HJDJbrA905CveNMsu2ap/6SMCtiEkAFoGPejI9VE8myTp62vGkS85HXrWBFj+a0ECBlqEdtqqQ==
@@ -798,12 +798,12 @@
     tslib "^2.4.0"
     wagmi "^0.3.5"
 
-"@koyofinance/swap-sdk@^0.2.0-next.4f3c101.0":
-  version "0.2.0-next.4f3c101.0"
-  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.4f3c101.0.tgz#087886735aad951fde4b434dae14e1cb25cf3c76"
-  integrity sha512-sqQhKjvwAHmt/yMFbE2TJNr8Qp2QCb0J2y24hTfnONIRLbssrdSlCP2Hain49R85sXalkUGBqFEzznEUWZXRYg==
+"@koyofinance/swap-sdk@^0.2.0-next.10203f0.0":
+  version "0.2.0-next.10203f0.0"
+  resolved "https://registry.yarnpkg.com/@koyofinance/swap-sdk/-/swap-sdk-0.2.0-next.10203f0.0.tgz#3ee0ef55c169515a2833dc9de8363f23fb8b7748"
+  integrity sha512-bG4gVLddV62A2zh4vd0NCUHx6bO4oPWj9nbGUCHdwXqBk7RmzrugAgrywzsAK9XyCSyykKjYRK1vdfr3dYvuyA==
   dependencies:
-    "@koyofinance/core-sdk" "^0.2.0-next.4f3c101.0"
+    "@koyofinance/core-sdk" "^0.2.0-next.10203f0.0"
     tslib "^2.4.0"
 
 "@metamask/safe-event-emitter@2.0.0", "@metamask/safe-event-emitter@^2.0.0":
